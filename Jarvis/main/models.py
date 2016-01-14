@@ -100,6 +100,7 @@ class Experience(models.Model):
 
     points = models.IntegerField(null=False)
     accepted = models.BooleanField(default=False)
+    lines_of_code = models.IntegerField(default=0)
 
     def __unicode__(self):
         return "pts: %s, usr: %s, accepted: %s, prjct: %s" % (
